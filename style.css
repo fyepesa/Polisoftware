@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Freehand&family=Just+Another+Hand&display=swap');
+
+footer {
+  text-align: center;
+  padding:50px 0;
+  color:#f0f9ff;
+  background-color:#282d32;
+}
+:root {
+    --main-color:#fff;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  height: 100%;
+  width: 100%;
+  overflow: scroll; 
+}
+
+.cuerpo{
+  margin-left: 25px;
+}
+
+.first-header {
+    background-color: dimgray;
+    width: 100%;
+    height: 50px;
+}
+
+nav {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200px;
+    top: 50px;
+    height: calc(100vh - 50px);
+    background-color: darkblue;
+    transform: translate(-100%);
+}
+
+.navegador {
+    color: var(--main-color);
+    display: block;
+    line-height: 3.5;
+    padding: 0 10px;
+    text-decoration: none;
+    transition: .4s ease;
+}
+.navegador li {
+    list-style: none;
+    width: 100%;
+    border-bottom: 1px solid rgba(255,255,255,.5);
+}
+
+.navegador a {
+    color: var(--main-color);
+    display: block;
+    line-height: 3.5;
+    padding: 0 10px;
+    text-decoration: none;
+    transition: .4s ease;
+}
+.navegador a:hover{
+    transform: translateX(10%);
+}
+#btn-nav {
+    display: none;
+}
+
+#btn-nav:checked ~ nav{
+    transform: translate(0);
+}
+
+.btn-nav {
+    color: var(--main-color);
+    font-size: 30px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+    padding: 6.5px 15px;
+    transition: .2s ease;
+    background-color: black
+}
+.btn-nav:hover{
+    background-color: black;
+}
+
+.titulo-principal{
+  text-align: center;
+  color: white;
+}
+
+.cabecera-image{
+    background-image: url("/img/fondo01.webp");
+    width: 100%;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index:-5;
+}
+.cabecera-text {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 0 0 10px black , 0 0 20px black , 0 0 30px black , 0 0 40px black , 0 0 70px black, 0 0 80px black , 0 0 100px black ;
+}
+.titulo-cabecera {
+    font-size: 50px;
+}
+.subtitulo-cabecera {
+    font-size: 40px;
+}
+
+.parrafo-cabecera {
+  text-align: justify;
+  font-size: 30px;
+  font-family: 'Freehand', cursive;
+  font-family: 'Just Another Hand', cursive;
+}
+
+.tabla-profesores {
+  caption-side: top;
+  table-layout: auto;
+  width: 100%;
+}
+.contenido-titulo {
+  text-align: center;
+  font-size: 50px;
+  text-decoration:overline;
+  padding:20px;
+}
+
+tr, td, th {
+    border: 3px solid gray;
+}
+table caption {
+    color: white;
+    background-color: darkblue;
+    font-size: 20px;
+}
+h3, h4{
+    text-align: center;
+    color: red;
+}
+.about {
+  text-align: center;
+}
+
+.social {
+  text-align:center;
+  padding-bottom:25px;
+}
+
+.social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin:0 8px;
+  color:inherit;
+  opacity:0.75;
+}
+
+.copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:0;
+}
+
+header label i {
+  font-size:20px;
+  width:30px;
+  height:30px;
+  line-height:30px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin:0 8px;
+  color:inherit;
+  opacity:0.75;
+}
+
+.formulario {
+  display: auto;
+  background-color: lightgray;
+  text-align: left;
+  width: 300px;
+  height: 470px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px gray;
+}
+
+.titulo-formulario {
+  display: auto;
+  text-align: center;
+  font-size: 45px;
+  margin-top: 25px;
+  margin-bottom:25px;
+}
+
+input[type="text"], textarea {
+  width: 100%;
+}
+
+div label {
+  margin-top: 10px;
+}
+
+.input-contenedor {
+  padding: 25px;
+  width: 100%;
+}
