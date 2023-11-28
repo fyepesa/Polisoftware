@@ -135,14 +135,15 @@
                       src="img/Polisoftware-intro.mp4" 
                       poster="img/poster.png" 
                       type="video/mp4"
+                      autoplay
                       controls
                       loading="lazy">
           </video>
           <script>
-              var video = document.getElementById("video1")
-
             function hideObject(id) {
               document.getElementById(id).style.display = 'none';
+              var video = document.getElementById("video")
+              video.pause();
             }
           </script>
       
