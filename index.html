@@ -40,6 +40,18 @@
             border-radius: 10px;
             
         }
+      #video{
+        position: relative;
+        height: 100%;
+        width: 100%;
+        aspect-ratio: 9/16;
+        object-fit: cover;
+      }
+
+      #close {
+        font-size: 15px; 
+        font-weight: 600;
+      }
     </style>
 </head>
 
@@ -114,31 +126,27 @@
     <!-- Carousel End -->
 
     <!-- Video part -->
-    <button onclick="hideObject('video1')">
-        <video id="video1" 
-                    src="../img/Polisoftware-intro.mp4" 
-                    poster="../img/poster.png" 
-                    type="video/mp4"
-                    controls
-                    loading="lazy">
-        </video>
-        <script>
-            var video = document.getElementById("video1")
+    <div id="video1" class="video1">
+      
+      <button onclick="hideObject('video1')">
+        <span id="close" class="close">&times; ocultar</span>
+        </button>
+          <video id="video" 
+                      src="img/Polisoftware-intro.mp4" 
+                      poster="img/poster.png" 
+                      type="video/mp4"
+                      controls
+                      loading="lazy">
+          </video>
+          <script>
+              var video = document.getElementById("video1")
 
-            window.addEventListener("scroll", function() {
-                var videoPosition = video.getBoundingClientRect();
-                var windowHeight = window.innerHeight;
-                if (videoPosition.top + videoPosition.height >= 0 && videoPosition.bottom - videoPosition.height <= windowHeight) {
-                video.play();
-                } else {
-                video.pause();
-                if (window.scrollY === 0) {
-                    video.currentTime = 0;
-                }
-                }
-            })
-        </script>
-    </button>
+            function hideObject(id) {
+              document.getElementById(id).style.display = 'none';
+            }
+          </script>
+      
+    </div>
 
 
     <!-- About Start -->
