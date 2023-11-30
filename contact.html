@@ -97,33 +97,23 @@
                 <div class="col-md-7">
                     <div class="contact-form">
                         <div id="success"></div>
-                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
-                            <div class="form-row">
-                                <div class="col-md-6">
-                                    <div class="control-group">
-                                        <input type="text" class="form-control p-4" id="name" placeholder="Su nombre" required="required" data-validation-required-message="Favor ingrese su nombre" />
-                                        <p class="help-block text-danger"></p>
-                                    </div>
+                        <form target="_blank" action="https://formsubmit.co/andresmarquez@gmail.com" method="POST">
+                            <div class="form-group">
+                              <div class="form-row">
+                                <div class="col">
+                                  <input type="text" name="name" class="form-control" placeholder="Nombre" required>
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="control-group">
-                                        <input type="email" class="form-control p-4" id="email" placeholder="Su correo" required="required" data-validation-required-message="Favor ingrese su correo" />
-                                        <p class="help-block text-danger"></p>
-                                    </div>
+                                <div class="col">
+                                  <input type="email" name="email" class="form-control" placeholder="Correo" required>
                                 </div>
+                              </div>
                             </div>
-                            <div class="control-group">
-                                <input type="text" class="form-control p-4" id="subject" placeholder="Asunto" required="required" data-validation-required-message="Favor ingrese el asunto" />
-                                <p class="help-block text-danger"></p>
+                            <div class="form-group">
+                              <textarea placeholder="Mensaje" class="form-control" name="message" rows="10" required></textarea>
                             </div>
-                            <div class="control-group">
-                                <textarea class="form-control" rows="5" id="message" placeholder="Mensaje" required="required" data-validation-required-message="Favor ingrese el mensaje"></textarea>
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div>
-                                <button class="btn btn-primary font-weight-semi-bold px-4" style="height: 50px;" type="submit" id="sendMessageButton">Enviar</button>
-                            </div>
-                        </form>
+                            <input type="hidden" name="_next" value="h../thanks.html">
+                            <button type="submit" class="btn btn-lg btn-dark btn-block">Enviar</button>
+                          </form>
                     </div>
                 </div>
             </div>
